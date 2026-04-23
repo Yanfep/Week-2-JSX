@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta setup: encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title for this pricing page -->
     <title>Pricing Plans — HTML version</title>
+
+    <!-- External font performance and stylesheet links -->
+    <!-- Preconnect to Google Fonts host -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to static font asset host -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Load Inter typeface weights used in the cards -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Local stylesheet for layout and component styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Small top label to identify this static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Main pricing cards wrapper (three side-by-side plans) -->
     <div class="cards-container">
+        <!-- Plan card: Hobby -->
         <div class="card">
+            <!-- Card header: plan name, price, and included features -->
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
                 <p class="card-price">
@@ -20,6 +33,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
+                    <!-- Feature checklist for the Hobby plan -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -36,9 +50,13 @@
                     </ul>
                 </div>
             </div>
+            <!-- Card CTA: secondary style button -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Plan card: Pro -->
         <div class="card">
+            <!-- Card header: plan name, price, and added features -->
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
                 <p class="card-price">
@@ -47,6 +65,7 @@
                 </p>
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
+                    <!-- Feature checklist for the Pro plan -->
                     <ul class="features-list">
                         <li>
                             <span class="checkmark">✓</span>
@@ -67,7 +86,44 @@
                     </ul>
                 </div>
             </div>
+            <!-- Card CTA: primary emphasis button -->
             <button class="download-button primary">Get Pro</button>
+        </div>
+
+        <!-- Plan card: Team -->
+        <div class="card">
+            <!-- Card header: plan name, price, and collaboration features -->
+            <div class="card-top">
+                <h3 class="card-title">Team</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$40</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <!-- Feature checklist for the Team plan -->
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Multi-seat access
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Shared project workspaces
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Team usage insights
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Card CTA: primary emphasis button -->
+            <button class="download-button primary">Start Team</button>
         </div>
     </div>
 </body>
